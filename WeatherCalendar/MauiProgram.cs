@@ -8,14 +8,6 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
-		try
-		{
-			CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
-		}
-		catch(Exception ex) 
-		{
-            Console.WriteLine(ex);
-        }
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()

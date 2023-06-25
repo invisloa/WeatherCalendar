@@ -74,13 +74,11 @@ namespace WeatherCalendar.ViewModels
 		{
 			NavigateCalendarCommand = new Command<int>(NavigateCalendar);
 			ChangeDateSelectionCommand = new Command<DateTime>(ChangeDateSelection);
-
 			foreach (Event @event in Events)
 			{
 				@event.DateTime = DateTime.Today.AddDays(Random.Next(-20, 21)).AddSeconds(Random.Next(86400));
 				@event.Color = Colors[Random.Next(6)];
 			}
-
 			EventCalendar.SelectedDates.CollectionChanged += SelectedDates_CollectionChanged;
 			EventCalendar.DaysUpdated += EventCalendar_DaysUpdated;
 			foreach (var day in EventCalendar.Days)

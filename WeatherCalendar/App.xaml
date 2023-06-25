@@ -49,7 +49,6 @@
             <Setter Property="BackgroundColor" Value="{StaticResource CalendarPrimaryColor}"/>
             <Setter Property="ArrowColor" Value="{StaticResource CalendarPrimaryTextColor}"/>
             <Setter Property="TextColor" Value="{StaticResource CalendarPrimaryTextColor}"/>
-            <Setter Property="HeightRequest" Value="50"/>
         </Style>
 
         <Style
