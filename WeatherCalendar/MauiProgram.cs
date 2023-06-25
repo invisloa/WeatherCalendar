@@ -11,7 +11,6 @@ public static class MauiProgram
 		try
 		{
 			CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
-			DayOfWeek.
 		}
 		catch(Exception ex) 
 		{
