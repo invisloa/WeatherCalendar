@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherCalendar.Model
+namespace WeatherCalendar.Models
 {
 	public class Event : BaseObservableModel
 	{

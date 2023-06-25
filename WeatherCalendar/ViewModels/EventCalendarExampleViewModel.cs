@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Android.Provider.CalendarContract;
 using System.Windows.Input;
 using XCalendar.Core.Collections;
 using XCalendar.Core.Enums;
 using XCalendar.Core.Models;
+using System.Collections.Specialized;
+using WeatherCalendar.Models;
+using XCalendar.Core.Extensions;
 
-namespace WeatherCalendar.ViewModel
+namespace WeatherCalendar.ViewModels
 {
 	public class EventCalendarExampleViewModel : BaseViewModel
 	{

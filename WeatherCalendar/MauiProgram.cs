@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using System.Globalization;
 
 namespace WeatherCalendar;
 
@@ -6,9 +8,19 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
+		try
+		{
+			CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
+			DayOfWeek.
+		}
+		catch(Exception ex) 
+		{
+            Console.WriteLine(ex);
+        }
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
